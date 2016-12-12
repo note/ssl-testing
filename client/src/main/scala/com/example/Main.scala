@@ -16,7 +16,7 @@ object Main {
 
     val http = Http()
 
-    val response = http.singleRequest(HttpRequest(uri = "http://akka.io"))
+    val response = http.singleRequest(HttpRequest(uri = "https://san.app:8080/hello"))
 
     response.andThen {
       case Success(r) =>
